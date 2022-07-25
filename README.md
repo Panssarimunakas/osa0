@@ -1,1 +1,1 @@
-# osa0
+Git repo for fullstackopen part0
