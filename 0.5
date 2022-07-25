@@ -1,0 +1,8 @@
+Selain->Palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+Palvelin->Selain: HTML-koodi
+Selain->Palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Palvelin->Selain: main.css
+Selain->Palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+Palvelin->Selain: spa.js
+
+Sama kuin aikaisempi, mutta ilman redirect-pyyntöä. Selain pyytää palvelimelta HTML-koodia, jonka palvelin palauttaa, ja sen jälkeen selain pyytää CSS-tiedostoa sekä spa.js-skriptiä, kuten HTML-koodissa on määritelty.

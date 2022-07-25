@@ -1,0 +1,14 @@
+selain->palvelin: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+palvelin->selain: Redirect-pyyntö
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+palvelin->selain: HTML-koodi
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+palvelin->selain: main.css
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+palvelin->selain: main.js
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+palvelin->selain: JSON-data
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/favicon.ico
+palvelin->selain: HTML-koodi
+
+Selain lähettää POST-pyynnön palvelimelle, sisältäen uuden noten. Palvelin vastaa uudelleenohjauspyynnöllä, joka ohjaa selaimen tekemään uuden GET-pyynnön palvelimelle. Palvelin vastaa HTML-koodilla, joka sisältää selaimelle pyynnöt hakea CSS-tiedoston, scriptin, ja datan noteista JSON-muodossa.
